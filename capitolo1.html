@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collegamenti Interni</title>
+    <!-- Aggiungi Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background-color: #f0f0f0; /* Imposta lo sfondo grigio chiaro */
+            background-color: #f0f0f0; /* Sfondo grigio chiaro */
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         h1, h2 {
             color: #333;
         }
         button {
-            background-color: #ff5100; /* Colore principale dei bottoni */
+            background-color: #ff5100; /* Colore arancione per i bottoni principali */
             color: white;
-            padding: 10px 20px; /* Bottoni più piccoli */
+            padding: 10px 20px;
             font-size: 14px;
             border: none;
             border-radius: 8px;
@@ -23,16 +27,49 @@
             margin: 5px;
         }
         button:hover {
-            background-color: #ff3a00; /* Colore più scuro quando il bottone è in hover */
+            background-color: #ff3a00; /* Colore più scuro al passaggio del mouse */
         }
         a {
             text-decoration: none;
         }
         .internal-link button {
-            background-color: #4CAF50; /* Colore dei bottoni per i collegamenti interni */
+            background-color: #4CAF50; /* Colore verde per i bottoni dei collegamenti interni */
         }
         .internal-link button:hover {
             background-color: #45a049;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .buttons-container button {
+            flex: 1;
+            margin: 0 10px; /* Spazio tra i bottoni */
+        }
+        .icon-button {
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50; /* Colore verde per l'icona */
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .icon-button:hover {
+            background-color: #45a049;
+        }
+        .home-icon {
+            font-size: 20px; /* Icona della casa */
+            color: white;
+            background-color: #2196F3; /* Colore blu per la casetta */
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .menu-icon {
+            font-size: 20px; /* Icona del menu */
+            color: white;
+            background-color: #ff9800; /* Colore arancione per l'icona del menu */
+            padding: 10px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -40,13 +77,21 @@
 
     <h1>CAPITOLO 1</h1>
 
-    <a href="copertina.html">
-        <button type="button">Torna alla copertina</button>
-    </a> <br>
-    <a href="indice.html">
-        <button type="button">Vai all'indice</button>
-    </a> <br>
+    <!-- Bottoni sulla stessa linea -->
+    <div class="buttons-container">
+        <a href="copertina.html">
+            <button type="button" class="home-icon">
+                <i class="fas fa-home"></i> <!-- Icona della casa -->
+            </button>
+        </a>
+        <a href="indice.html">
+            <button type="button" class="menu-icon">
+                <i class="fas fa-bars"></i> <!-- Icona delle 3 righe -->
+            </button>
+        </a>
+    </div>
 
+    <!-- Collegamenti interni -->
     <a href="#STORIA" class="internal-link">
         <button type="button">Vai al paragrafo Storia</button>
     </a><br>
@@ -81,7 +126,4 @@
 
     <h2 id="COMPORTAMENTO_IN_RETE">Comportamento in Rete</h2><br>
     <p>Contenuto sul comportamento in rete.</p><br>
-
-</body>
-</html>
 
