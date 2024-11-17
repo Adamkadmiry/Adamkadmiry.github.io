@@ -1,44 +1,87 @@
-<h1>CAPITOLO 1</h1>
-<A href="indice.html">  </a>
-
-
-<a href="copertina.html">
-    <button type="button" style="background-color: #ff5100; color: white; padding: 15px 32px; font-size: 16px; border: none; border-radius: 8px;">
-        torna alla copertina
-    </button>
-</a> <br>
-<a href="indice.html">
-    <button type="button" style="background-color: #ff5100; color: white; padding: 15px 32px; font-size: 16px; border: none; border-radius: 8px;">
-        vai all'indice
-    </button>
-</a> <br>
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collegamenti Interni</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Imposta lo sfondo grigio chiaro */
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background-color: #ff5100; /* Colore principale dei bottoni */
+            color: white;
+            padding: 10px 20px; /* Bottoni più piccoli */
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #ff3a00; /* Colore più scuro quando il bottone è in hover */
+        }
+        a {
+            text-decoration: none;
+        }
+        .internal-link button {
+            background-color: #4CAF50; /* Colore dei bottoni per i collegamenti interni */
+        }
+        .internal-link button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
-    <a href="#STORIA"><h2>Vai al paragrafo Storia</h2></a><br>
-    <a href="#SCIENZE"><h2>Vai al paragrafo Scienze</h2></a><br>
-    <a href="#ASPETTI_POSITIVI_E_NEGATIVI"><h2>Vai al paragrafo degli aspetti positivi e negativi</h2></a><br>
-    <a href="#COMPORTAMENTO_IN_RETE"><h2>Vai al paragrafo del comportamento in rete</h2></a><br>
+    <h1>CAPITOLO 1</h1>
+
+    <a href="copertina.html">
+        <button type="button">Torna alla copertina</button>
+    </a> <br>
+    <a href="indice.html">
+        <button type="button">Vai all'indice</button>
+    </a> <br>
+
+    <a href="#STORIA" class="internal-link">
+        <button type="button">Vai al paragrafo Storia</button>
+    </a><br>
+    <a href="#SCIENZE" class="internal-link">
+        <button type="button">Vai al paragrafo Scienze</button>
+    </a><br>
+    <a href="#ASPETTI_POSITIVI_E_NEGATIVI" class="internal-link">
+        <button type="button">Vai al paragrafo degli aspetti positivi e negativi</button>
+    </a><br>
+    <a href="#COMPORTAMENTO_IN_RETE" class="internal-link">
+        <button type="button">Vai al paragrafo del comportamento in rete</button>
+    </a><br>
 
     <h2 id="STORIA">Storia</h2><br>
     <p>L'informatica nasce all'incirca negli anni '50 con l'architettura di von Neumann, che verrà poi seguita dalla creazione dei mainframe, e tutta la potenza dei mainframe verrà trasferita nei PC (questo avvenimento è chiamato downsizing). Tutto questo continuo cambiamento ci porterà ai giorni nostri.</p><br>
 
     <h2 id="SCIENZE">Scienze</h2><br>
-    <p>L'informatica è una scienza che si occupa della codifica, elaborazione e digitalizzazione delle informazioni in modo completamente automatico, utilizzando algoritmi. È ubiqua e pervasiva: pervasiva perché si applica a ogni ambito di lavoro, come la medicina, le comunicazioni e molti altri settori; ubiqua perché, grazie a una connessione Internet, possiamo accedervi da qualsiasi luogo.
-</p><br>
+    <p>L'informatica è una scienza che si occupa della codifica, elaborazione e digitalizzazione delle informazioni in modo completamente automatico, utilizzando algoritmi. È ubiqua e pervasiva: pervasiva perché si applica a ogni ambito di lavoro, come la medicina, le comunicazioni e molti altri settori; ubiqua perché, grazie a una connessione Internet, possiamo accedervi da qualsiasi luogo.</p><br>
 
     <h2 id="ASPETTI_POSITIVI_E_NEGATIVI">Aspetti Positivi e Negativi</h2><br>
-    <p> ASPETTI POSITIVI Veloce accesso alle informazioni  Comunicazione in tempo a distanza  Automazione di processi pericolosi  Servizi online Srchivio delle informazioni
-ASPETTI NEGATIVI Dipendenza Divario digitale Cyber bullismo
-
-  </p>
+    <p><strong>Aspetti Positivi:</strong><br>
+    - Veloce accesso alle informazioni<br>
+    - Comunicazione in tempo reale a distanza<br>
+    - Automazione di processi pericolosi<br>
+    - Servizi online<br>
+    - Archivio delle informazioni<br><br>
+    
+    <strong>Aspetti Negativi:</strong><br>
+    - Dipendenza<br>
+    - Divario digitale<br>
+    - Cyberbullismo</p><br>
 
     <h2 id="COMPORTAMENTO_IN_RETE">Comportamento in Rete</h2><br>
-    <p>Contenuto sul comportamento in rete...</p><br>
+    <p>Contenuto sul comportamento in rete.</p><br>
+
+</body>
+</html>
+
