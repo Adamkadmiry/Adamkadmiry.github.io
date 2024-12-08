@@ -5,7 +5,13 @@
 <a href="copertina.html">
 <button type="button"class="bottone">Vai alla copertina</button></a><br><br><br>
 <a href="#CODIFICA ASCII">
-	<button type="button">Vai all'paragrafo della codifica ascii </button></a><br><br><br>
+<button type="button"class="bottone">Vai all'paragrafo della codifica ascii</button></a><br><br><br>
+<a href="#CODIFICA AUDIO">
+<button type="button"class="bottone">Vai all'paragrafo della codifica audio</button></a><br><br><br>
+<a href="#CODIFICA DEI NUMERI">
+<button type="button"class="bottone">Vai all'paragrafo della codifica dei numeri</button></a><br><br><br>
+	
+
 <table>
 	<h2>CODIFICA DELLE IMMAGINI</h2><br><br>
 	<tr>
@@ -126,7 +132,7 @@ table {
 
 	.bottone {
 		height:20px;
-		width:200px;
+		width:300px;
 		
 	}
 	
@@ -138,7 +144,55 @@ table {
 <h2 id="CODIFICA AUDIO">CODIFICA AUDIO</h2>
 <p>La **codifica audio** è il processo di conversione di segnali audio in un formato digitale che può essere memorizzato o trasmesso da dispositivi elettronici.<br> I file audio vengono compressi utilizzando algoritmi che riducono la quantità di dati necessari per rappresentare l'audio, mantenendo al contempo la qualità del suono.<br> Alcuni dei formati più comuni di codifica audio sono il **MP3**, che utilizza la compressione lossy, e il **WAV**, che è un formato non compresso o lossless.<br> La compressione lossy, come nel caso dell'MP3, elimina alcune informazioni audio considerate meno percepibili dall'orecchio umano, riducendo così la dimensione del file senza una perdita significativa di qualità percettibile.</p>
 <table>
-	<h2>CODIFICA DEI NUMERI (POSITIVI E NEGATIVI)</h2><br><br>
+	<tr>
+	  <td class="testo-blu">Tipo di Codifica</td>
+	  <td class="testo-blu">Frequenza di Campionamento</td>
+	  <td class="testo-blu">Profondità di Bit</td>
+	  <td class="testo-blu">Occupazione Memoria</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">Audio Mono</td>
+	  <td class="testo-nero">44.1 kHz</td>
+	  <td class="testo-viola">16 bit</td>
+	  <td class="testo-indaco">1.411 kbps (uncompressed)</td>
+	</tr>
+	<tr>
+	  <td class="testo-rosso">Audio Stereo</td>
+	  <td class="testo-arancione">44.1 kHz</td>
+	  <td class="testo-giallo">16 bit</td>
+	  <td class="testo-verde">2.822 kbps (uncompressed)</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">MP3</td>
+	  <td class="testo-arancione">44.1 kHz</td>
+	  <td class="testo-viola">128 kbps</td>
+	  <td class="testo-indaco">128 kbps (compressed)</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">WAV (Lossless)</td>
+	  <td class="testo-arancione">44.1 kHz</td>
+	  <td class="testo-viola">16 bit</td>
+	  <td class="testo-indaco">1.411 kbps (uncompressed)</td>
+	</tr>
+	<tr>
+	  <td class="testo-rosso">FLAC</td>
+	  <td class="testo-arancione">44.1 kHz</td>
+	  <td class="testo-viola">16 bit</td>
+	  <td class="testo-verde">800 kbps (compressed)</td>
+	</tr>
+	<tr>
+	  <td class="testo-rosso">AAC</td>
+	  <td class="testo-arancione">48 kHz</td>
+	  <td class="testo-viola">256 kbps</td>
+	  <td class="testo-verde">256 kbps (compressed)</td>
+	</tr>
+  </table>
+  
+  <br><br>
+  <h2 id="CODIFICA DEI NUMERI">CODIFICA DEI NUMERI (POSITIVI E NEGATIVI)</h2>
+<p></p>
+  <table>
+	
 	<tr>
 	  <td class="testo-blu">Numero</td>
 	  <td class="testo-blu">Codifica</td>
@@ -200,38 +254,40 @@ table {
 	  border-style: solid;
 	  border-width: 1px;
 	  border-color: black;
+	  width: 100%;
 	}
 	td {
 	  border: 1px solid black;
 	  padding: 8px;
+	  text-align: center;
 	}
 	table {
 	  border-collapse: collapse;
-	  text-align: center;
 	}
 	.testo-rosso {
-		color: #000000;
+	  color: #000000;
 	}
 	.testo-arancione {
-		color: #000000;
+	  color: #000000;
 	}
 	.testo-giallo {
-		color: #000000;
+	  color: #000000;
 	}
-    .testo-verde {
-		color: #000000;
+	.testo-verde {
+	  color: #000000;
 	}
-    
-    .testo-azurro {
-		color: #0b0b0b;
+	.testo-azurro {
+	  color: #0b0b0b;
 	}
 	.testo-blu {
-		color: #ff0800;
+	  color: #ff0800;
 	}
 	.testo-viola {
-		color: #000000;
+	  color: #000000;
 	}
 	.testo-indaco {
-		color: #0f0f0f;
+	  color: #0f0f0f;
 	}
-	</style>
+  </style>
+  
+  
