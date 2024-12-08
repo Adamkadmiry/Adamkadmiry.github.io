@@ -4,8 +4,10 @@
 <button type="button"class="bottone">torna all'indice</button></a><br><br><br>
 <a href="copertina.html">
 <button type="button"class="bottone">Vai alla copertina</button></a><br><br><br>
+<a href="#CODIFICA ASCII">
+	<button type="button">Vai all'paragrafo della codifica ascii </button></a><br><br><br>
 <table>
-	
+	<h2>CODIFICA DELLE IMMAGINI</h2><br><br>
 	<tr>
 		<td>
 			<p class="testo-blu">Tipo d immagine</p>
@@ -17,49 +19,63 @@
 			<p class="testo-blu"> profondita </p>
 		</td>
 		<td> 
-			<p class="testo-blu">occupazione memoria</p>
+			<p class="testo-blu">occupazione memoria in bit </p>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<p class="testo-azurro">AZURRO</p>
+			<p class="testo-azurro">bianco e nero</p>
 		</td>
 	
 		<td>
-			<p class="testo-blu">BLU</p>
+			<p class="testo-nero">1x1(bit)</p>
 		</td>
 		<td>
-			<p class="testo-viola">VIOLA</p>
+			<p class="testo-viola">1(bit)</p>
 		</td>
 		<td>
-			<p class="testo-indaco">INDACO</p>
+			<p class="testo-indaco">1(bit)</p>
 		</td> 
 	</tr>
 	<td>
-		<p class="testo-rosso">ROSSO</p>
+		<p class="testo-rosso">grigio</p>
 	</td> 
 	<td>
-		<p class="testo-arancione">ARANCIONE</p>
+		<p class="testo-arancione">8x8 (bit)</p>
 	</td> 	
 	<td>
-		<p class="testo-giallo">GIALLO</p>
+		<p class="testo-giallo">un byte(8 bit)</p>
 	</td> 	
 	<td>
-		<p class="testo-verde">VERDE</p>
+		<p class="testo-verde">1word(64bit)</p>
 	</td> 
 </tr>
 <td>
-	<p class="testo-azurro">AZURRO</p>
+	<p class="testo-azurro">radiografia</p>
 </td> 
 <td>
-	<p class="testo-blu">BLU</p>
+	<p class="testo-arancione">16x16(bit)</p>
 </td> 
 <td>
-	<p class="testo-viola">VIOLA</p>
+	<p class="testo-viola">16(bit)</p>
 </td> 
 <td>
-	<p class="testo-indaco">INDACO</p>
+	<p class="testo-indaco">4 word(256bit)</p>
 </td> 
+</tr>
+<td>
+	<p class="testo-azurro">a colori</p>
+</td> 
+<td>
+	<p class="testo-arancione">24x24(bit)</p>
+</td> 
+<td>
+	<p class="testo-viola">24(bit)</p>
+</td> 
+<td>
+	<p class="testo-indaco">8 word (512 bit)</p>
+</td> 
+
 
 	</tr>
 </table>
@@ -83,29 +99,29 @@ table {
 	
 	
 	.testo-rosso {
-		color: #ff2600;
+		color: #000000;
 	}
 	.testo-arancione {
-		color: #e2640a;
+		color: #000000;
 	}
 	.testo-giallo {
-		color: #ffdd00;
+		color: #000000;
 	}
     .testo-verde {
-		color: #33ff00;
+		color: #000000;
 	}
     
     .testo-azurro {
-		color: #00e5ff;
+		color: #0b0b0b;
 	}
 	.testo-blu {
-		color: #0400ff;
+		color: #ff0800;
 	}
 	.testo-viola {
-		color: #a600ff;
+		color: #000000;
 	}
 	.testo-indaco {
-		color: #7700ff;
+		color: #0f0f0f;
 	}
 
 	.bottone {
@@ -116,3 +132,106 @@ table {
 	
 
 </style>
+<h2 id="CODIFICA ASCII">CODIFICA DEI TESTI</h2>
+<p>L'**ASCII** (American Standard Code for Information Interchange) è un sistema di codifica dei caratteri che utilizza 7 bit per rappresentare 128 simboli, tra cui lettere, numeri, segni di punteggiatura e caratteri di controllo.<br> Ogni carattere ASCII viene rappresentato da un numero binario a 7 bit, ad esempio, la lettera "A" è rappresentata dal numero 65 (in decimale) o 1000001 (in binario).<br> L'ASCII è stato sviluppato negli anni '60 per facilitare la comunicazione tra computer e dispositivi elettronici.</p>
+<img src="codifica ascii.jpeg" alt="codifica ascii" width="500" height="600">
+<h2 id="CODIFICA AUDIO">CODIFICA AUDIO</h2>
+<p>La **codifica audio** è il processo di conversione di segnali audio in un formato digitale che può essere memorizzato o trasmesso da dispositivi elettronici.<br> I file audio vengono compressi utilizzando algoritmi che riducono la quantità di dati necessari per rappresentare l'audio, mantenendo al contempo la qualità del suono.<br> Alcuni dei formati più comuni di codifica audio sono il **MP3**, che utilizza la compressione lossy, e il **WAV**, che è un formato non compresso o lossless.<br> La compressione lossy, come nel caso dell'MP3, elimina alcune informazioni audio considerate meno percepibili dall'orecchio umano, riducendo così la dimensione del file senza una perdita significativa di qualità percettibile.</p>
+<table>
+	<h2>CODIFICA DEI NUMERI (POSITIVI E NEGATIVI)</h2><br><br>
+	<tr>
+	  <td class="testo-blu">Numero</td>
+	  <td class="testo-blu">Codifica</td>
+	  <td class="testo-blu">Numero Negativo</td>
+	  <td class="testo-blu">Codifica Negativa</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">0</td>
+	  <td class="testo-nero">0000</td>
+	  <td class="testo-rosso">-0</td>
+	  <td class="testo-arancione">1000</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">1</td>
+	  <td class="testo-nero">0001</td>
+	  <td class="testo-rosso">-1</td>
+	  <td class="testo-arancione">1001</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">2</td>
+	  <td class="testo-nero">0010</td>
+	  <td class="testo-rosso">-2</td>
+	  <td class="testo-arancione">1010</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">3</td>
+	  <td class="testo-nero">0011</td>
+	  <td class="testo-rosso">-3</td>
+	  <td class="testo-arancione">1011</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">4</td>
+	  <td class="testo-nero">0100</td>
+	  <td class="testo-rosso">-4</td>
+	  <td class="testo-arancione">1100</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">5</td>
+	  <td class="testo-nero">0101</td>
+	  <td class="testo-rosso">-5</td>
+	  <td class="testo-arancione">1101</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">6</td>
+	  <td class="testo-nero">0110</td>
+	  <td class="testo-rosso">-6</td>
+	  <td class="testo-arancione">1110</td>
+	</tr>
+	<tr>
+	  <td class="testo-azurro">7</td>
+	  <td class="testo-nero">0111</td>
+	  <td class="testo-rosso">-7</td>
+	  <td class="testo-arancione">1111</td>
+	</tr>
+  </table>
+  
+  <style>
+	table {
+	  border-style: solid;
+	  border-width: 1px;
+	  border-color: black;
+	}
+	td {
+	  border: 1px solid black;
+	  padding: 8px;
+	}
+	table {
+	  border-collapse: collapse;
+	  text-align: center;
+	}
+	.testo-rosso {
+		color: #000000;
+	}
+	.testo-arancione {
+		color: #000000;
+	}
+	.testo-giallo {
+		color: #000000;
+	}
+    .testo-verde {
+		color: #000000;
+	}
+    
+    .testo-azurro {
+		color: #0b0b0b;
+	}
+	.testo-blu {
+		color: #ff0800;
+	}
+	.testo-viola {
+		color: #000000;
+	}
+	.testo-indaco {
+		color: #0f0f0f;
+	}
+	</style>
