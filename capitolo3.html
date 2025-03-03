@@ -4,7 +4,7 @@
 torna all'indice</a><br><br><br>
 <a href="#CODIFICA ASCII">
 Vai all'paragrafo della codifica ascii</a><br><br><br>
-<a href="#CODIFICA AUDIO">
+<a href="#CODIFICA video">
 Vai all'paragrafo della codifica audio</a><br><br><br>
 <a href="#CODIFICA DEI NUMERI">
 Vai all'paragrafo della codifica dei numeri</a><br><br><br>
@@ -139,114 +139,106 @@ table {
 <h2 id="CODIFICA ASCII">CODIFICA DEI TESTI</h2>
 <p>L'**ASCII** (American Standard Code for Information Interchange) è un sistema di codifica dei caratteri che utilizza 7 bit per rappresentare 128 simboli, tra cui lettere, numeri, segni di punteggiatura e caratteri di controllo.<br> Ogni carattere ASCII viene rappresentato da un numero binario a 7 bit, ad esempio, la lettera "A" è rappresentata dal numero 65 (in decimale) o 1000001 (in binario).<br> L'ASCII è stato sviluppato negli anni '60 per facilitare la comunicazione tra computer e dispositivi elettronici.</p>
 <img src="codifica ascii.jpeg" alt="codifica ascii" width="500" height="600">
-<h2 id="CODIFICA AUDIO">CODIFICA AUDIO</h2>
-<p>La **codifica audio** è il processo di conversione di segnali audio in un formato digitale che può essere memorizzato o trasmesso da dispositivi elettronici.<br> I file audio vengono compressi utilizzando algoritmi che riducono la quantità di dati necessari per rappresentare l'audio, mantenendo al contempo la qualità del suono.<br> Alcuni dei formati più comuni di codifica audio sono il **MP3**, che utilizza la compressione lossy, e il **WAV**, che è un formato non compresso o lossless.<br> La compressione lossy, come nel caso dell'MP3, elimina alcune informazioni audio considerate meno percepibili dall'orecchio umano, riducendo così la dimensione del file senza una perdita significativa di qualità percettibile.</p>
-<table>
-	<tr>
-	  <td class="testo-blu">Tipo di Codifica</td>
-	  <td class="testo-blu">Frequenza di Campionamento</td>
-	  <td class="testo-blu">Profondità di Bit</td>
-	  <td class="testo-blu">Occupazione Memoria</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">Audio Mono</td>
-	  <td class="testo-nero">44.1 kHz</td>
-	  <td class="testo-viola">16 bit</td>
-	  <td class="testo-indaco">1.411 kbps (uncompressed)</td>
-	</tr>
-	<tr>
-	  <td class="testo-rosso">Audio Stereo</td>
-	  <td class="testo-arancione">44.1 kHz</td>
-	  <td class="testo-giallo">16 bit</td>
-	  <td class="testo-verde">2.822 kbps (uncompressed)</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">MP3</td>
-	  <td class="testo-arancione">44.1 kHz</td>
-	  <td class="testo-viola">128 kbps</td>
-	  <td class="testo-indaco">128 kbps (compressed)</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">WAV (Lossless)</td>
-	  <td class="testo-arancione">44.1 kHz</td>
-	  <td class="testo-viola">16 bit</td>
-	  <td class="testo-indaco">1.411 kbps (uncompressed)</td>
-	</tr>
-	<tr>
-	  <td class="testo-rosso">FLAC</td>
-	  <td class="testo-arancione">44.1 kHz</td>
-	  <td class="testo-viola">16 bit</td>
-	  <td class="testo-verde">800 kbps (compressed)</td>
-	</tr>
-	<tr>
-	  <td class="testo-rosso">AAC</td>
-	  <td class="testo-arancione">48 kHz</td>
-	  <td class="testo-viola">256 kbps</td>
-	  <td class="testo-verde">256 kbps (compressed)</td>
-	</tr>
-  </table>
+<h1>Codifica Video</h1>
+    
+<p>La codifica video è il processo attraverso il quale un video viene trasformato in un formato digitale compresso. Questo processo è fondamentale per ridurre la dimensione dei file video, facilitare la trasmissione su Internet e ottimizzare lo spazio di archiviazione. Esistono diversi metodi e formati di codifica video, che variano in base all'efficienza, alla qualità e all'uso previsto.</p>
+
+<h2>Compressione Video</h2>
+<p>La <strong>compressione video</strong> può essere divisa in due categorie principali:</p>
+<ul>
+	<li><strong>Compressione Lossy:</strong> Riduce la dimensione del file eliminando i dati meno significativi, con una certa perdita di qualità. Esempi di formati lossy sono <code>H.264</code> e <code>HEVC</code>.</li>
+	<li><strong>Compressione Lossless:</strong> Non comporta alcuna perdita di qualità. È raramente usata per video, ma può essere utile per scopi professionali, come l'editing. Un esempio di formato lossless è <code>FFV1</code>.</li>
+</ul>
+
+<h2>Formati di Codifica Video</h2>
+<p>Esistono diversi formati di codifica video, ognuno con caratteristiche e applicazioni specifiche. I più comuni sono:</p>
+
+<h3>H.264 (AVC)</h3>
+<p><strong>H.264</strong>, anche noto come <code>Advanced Video Coding (AVC)</code>, è uno dei formati di compressione video più usati. È un formato lossy che offre un buon equilibrio tra qualità video e dimensione del file, ed è utilizzato in una vasta gamma di dispositivi e applicazioni, come YouTube, Netflix e la maggior parte dei lettori video digitali.</p>
+
+<p><strong>Esempio:</strong> Un video compresso con <code>H.264</code> può ridurre significativamente la dimensione del file pur mantenendo una qualità visiva alta, rendendolo ideale per la trasmissione in streaming e la distribuzione via Internet.</p>
+
+<h3>HEVC (H.265)</h3>
+<p><strong>HEVC</strong>, o <code>High Efficiency Video Coding (H.265)</code>, è un formato di codifica video avanzato che offre una compressione più efficiente rispetto a H.264, migliorando la qualità video a parità di bitrate o riducendo ulteriormente la dimensione del file a parità di qualità. È particolarmente utile per i video in 4K e risoluzioni superiori.</p>
+
+<p><strong>Esempio:</strong> Un video 4K compresso con HEVC avrà una dimensione significativamente più piccola rispetto allo stesso video compresso con H.264, mantenendo una qualità visiva praticamente identica.</p>
+
+<h3>VP9</h3>
+<p><strong>VP9</strong> è un formato di codifica video open-source sviluppato da Google, utilizzato principalmente per lo streaming video su piattaforme come YouTube. VP9 offre una compressione simile a HEVC ma senza royalty, ed è sempre più popolare nei servizi di streaming.</p>
+
+<p><strong>Esempio:</strong> VP9 è utilizzato per la trasmissione di video in alta definizione su YouTube, dove consente una qualità video elevata anche con una larghezza di banda limitata.</p>
+
+<h2>Codifica Video e Frame</h2>
+<p>Un video è composto da una sequenza di <strong>frame</strong> (immagini statiche) visualizzati in rapida successione per creare l'illusione del movimento. La codifica video si basa su tre tipi di frame principali:</p>
+<ul>
+	<li><strong>I-Frame (Intra-coded Frame):</strong> Un I-Frame è un frame completo che contiene tutte le informazioni necessarie per la visualizzazione dell'immagine. Non dipende da altri frame ed è usato come punto di riferimento per la codifica di altri frame.</li>
+	<li><strong>P-Frame (Predicted Frame):</strong> Un P-Frame contiene solo le informazioni sui cambiamenti rispetto al frame precedente. Questo riduce la quantità di dati necessari per la sua codifica.</li>
+	<li><strong>B-Frame (Bi-directional Predicted Frame):</strong> Un B-Frame utilizza sia il frame precedente che quello successivo per predire il suo contenuto, riducendo ulteriormente la quantità di dati.</li>
+</ul>
+
+<h2>Codifica Video: Esempio Pratico</h2>
+<p>Considera un video di una persona che cammina in un parco. Ogni secondo, il video è composto da una serie di frame. La codifica video cercherà di ridurre la quantità di dati necessari per rappresentare il video utilizzando un mix di I-Frame, P-Frame e B-Frame:</p>
+<ol>
+	<li>Il primo frame (I-Frame) viene codificato completamente.</li>
+	<li>I frame successivi (P-Frame) contengono solo le informazioni che cambiano rispetto al primo frame (ad esempio, i movimenti della persona che cammina).</li>
+	<li>I B-Frame possono essere utilizzati per comprimere ulteriormente il video, confrontando i frame successivi e precedenti per predire meglio le immagini intermedie.</li>
+</ol>
+
+<h2>Bitrate e Qualità Video</h2>
+<p>Il <strong>bitrate</strong> è un parametro importante nella codifica video, poiché determina la quantità di dati utilizzati per rappresentare il video. Un bitrate più elevato generalmente si traduce in una qualità video migliore, ma aumenta anche la dimensione del file. Tuttavia, la qualità video non dipende solo dal bitrate, ma anche dalla tecnica di compressione utilizzata.</p>
+
+<p><strong>Esempio:</strong> Un video codificato con H.264 a 5 Mbps avrà una qualità video inferiore rispetto a uno codificato con HEVC a 5 Mbps, poiché HEVC è più efficiente nella compressione.</p>
+
+<h2>Conclusioni</h2>
+<p>La codifica video è un processo essenziale per ridurre la dimensione dei file e facilitare la distribuzione e la visualizzazione dei video. Esistono diversi formati e tecniche, ciascuna con vantaggi specifici in base alle esigenze dell'utente. Se la qualità è la priorità, formati come HEVC o VP9 sono ideali, mentre se l'efficienza in termini di spazio e larghezza di banda è fondamentale, H.264 può essere una scelta più pratica.</p>
+
   
   <br><br>
-  <h2 id="CODIFICA DEI NUMERI">CODIFICA DEI NUMERI (POSITIVI E NEGATIVI)</h2>
-<p>La codifica dei numeri è un processo che permette di rappresentare numeri, sia positivi che negativi, in forma digitale per l'elaborazione nei computer. Per i numeri positivi, si utilizza generalmente il sistema di numerazione binaria, dove ogni cifra è rappresentata da un bit (0 o 1). I numeri negativi vengono codificati tramite metodi come il complemento a due, che permette di rappresentare anche i numeri negativi con un solo tipo di bit. In questo sistema, il bit più significativo (MSB) rappresenta il segno del numero: se è 0, il numero è positivo, se è 1, il numero è negativo. La codifica dei numeri è fondamentale per garantire che le operazioni aritmetiche vengano eseguite correttamente dai computer.</p>
-  <table>
-	
-	<tr>
-	  <td class="testo-blu">Numero</td>
-	  <td class="testo-blu">Codifica</td>
-	  <td class="testo-blu">Numero Negativo</td>
-	  <td class="testo-blu">Codifica Negativa</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">0</td>
-	  <td class="testo-nero">0000</td>
-	  <td class="testo-rosso">-0</td>
-	  <td class="testo-arancione">1000</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">1</td>
-	  <td class="testo-nero">0001</td>
-	  <td class="testo-rosso">-1</td>
-	  <td class="testo-arancione">1001</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">2</td>
-	  <td class="testo-nero">0010</td>
-	  <td class="testo-rosso">-2</td>
-	  <td class="testo-arancione">1010</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">3</td>
-	  <td class="testo-nero">0011</td>
-	  <td class="testo-rosso">-3</td>
-	  <td class="testo-arancione">1011</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">4</td>
-	  <td class="testo-nero">0100</td>
-	  <td class="testo-rosso">-4</td>
-	  <td class="testo-arancione">1100</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">5</td>
-	  <td class="testo-nero">0101</td>
-	  <td class="testo-rosso">-5</td>
-	  <td class="testo-arancione">1101</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">6</td>
-	  <td class="testo-nero">0110</td>
-	  <td class="testo-rosso">-6</td>
-	  <td class="testo-arancione">1110</td>
-	</tr>
-	<tr>
-	  <td class="testo-azurro">7</td>
-	  <td class="testo-nero">0111</td>
-	  <td class="testo-rosso">-7</td>
-	  <td class="testo-arancione">1111</td>
-	</tr>
-  </table>
+
+  <h1 id="Codifica dei Numeri"> Codifica dei Numeri</h1>
+    
+  <p>I numeri possono essere rappresentati in vari modi, a seconda della tipologia di numeri che stiamo trattando. Le principali categorie di numeri in informatica includono:</p>
   
+  <h2>N (Numeri Naturali)</h2>
+  <p>I numeri naturali sono i numeri interi positivi (e talvolta lo zero), come 0, 1, 2, 3, .... La codifica dei numeri naturali è abbastanza semplice, in quanto sono rappresentati direttamente in base 2 (binario).</p>
+  
+  <p><strong>Esempio:</strong> Il numero naturale 5 in binario si rappresenta come <code>101</code>.</p>
+
+  <h2>Z (Numeri Interi)</h2>
+  <p>I numeri interi includono numeri negativi, zero e numeri positivi. Questi numeri vengono generalmente codificati tramite il sistema di complemento a due, che permette di rappresentare sia numeri positivi che negativi con lo stesso schema di codifica binaria.</p>
+  
+  <p><strong>Esempio:</strong> Il numero intero -5 in complemento a due, su 8 bit, si rappresenta come <code>11111011</code>.</p>
+  
+  <h3>Conversione tra Decimale e Complemento a Due:</h3>
+  <p>Per ottenere la rappresentazione in complemento a due di un numero negativo, segui questi passaggi:</p>
+  <ol>
+	  <li>Rappresenta il valore assoluto del numero in binario.</li>
+	  <li>Inverti tutti i bit (complemento a uno).</li>
+	  <li>Aggiungi 1 al risultato (complemento a due).</li>
+  </ol>
+
+  <h2>R (Numeri Reali)</h2>
+  <p>I numeri reali comprendono tutti i numeri razionali e irrazionali, come π e √2. La codifica dei numeri reali è più complessa e viene spesso rappresentata tramite notazione in virgola mobile, come nel formato IEEE 754, che consente di gestire numeri con una grande varietà di precisione e ampiezza.</p>
+
+  <h3>Formato IEEE 754:</h3>
+  <p>Il formato IEEE 754 definisce come rappresentare numeri reali in computer. Esistono due formati principali: semplice precisione (32 bit) e doppia precisione (64 bit).</p>
+
+  <p><strong>Esempio:</strong> Un numero come 13.25 in formato IEEE 754 (32 bit) è rappresentato come:</p>
+  <pre>
+	  01000010 10100000 00000000 00000000
+  </pre>
+  <p>In questo esempio:</p>
+  <ul>
+	  <li>Il primo bit è il segno (0 per positivo).</li>
+	  <li>I successivi 8 bit rappresentano l'esponente (con un bias di 127 per la precisione semplice).</li>
+	  <li>Gli ultimi 23 bit rappresentano la mantissa.</li>
+  </ul>
+
+  <h2>Altre Considerazioni</h2>
+  <p>Quando si tratta di numeri interi o reali, la <strong>precisione</strong> e la <strong>portata</strong> sono aspetti cruciali. La precisione riguarda la quantità di cifre significative che possono essere rappresentate, mentre la portata si riferisce all'intervallo di valori che un tipo di dato può rappresentare.</p>
+  
+  <p>In particolare, i numeri reali rappresentati in virgola mobile possono essere soggetti a errori di precisione, che si verificano quando un numero non può essere rappresentato esattamente nel formato binario. Questo è noto come <strong>errore di arrotondamento</strong>.</p>
+
   <style>
 	table {
 	  border-style: solid;
